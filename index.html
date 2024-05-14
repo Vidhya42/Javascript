@@ -2,26 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Website</title>
-    <link rel="stylesheet" href="style.css"/>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
-    <div class="container">
     <center>
-        <h1>BUY URS</h1>
-        <h3>Choose your fashion & Choose your attitude</h3>
-        <p>Online Shopping Site for Fashion & Lifestyle in India. India's Fashion Expert brings you a variety of footwear, Clothing, Accessories and lifestyle products ...</p>
-        <div class="images">
-            <img onmouseover="dress()" onmouseout="dress1()" id="dress" src="images/dress2.jpg" alt="Dresses"/>
-            <img onmouseover="cosmetics()" onmouseout="cosmetics1()" id="cosmetics" src="images/cosmetics2.jpg" alt="cosmetics"/>
-            <img onmouseover="watch()" onmouseout="watch1()" id="watch" src="images/watch2.jpg" alt="watches"/>
-            <img onmouseover="slipper()" onmouseout="slipper1()" id="slipper" src="images/slipper2.jpg" alt="slipper"/>
-        </div>
-        <button onclick="alert('Thank you for visiting. Have a nice day')">Bye for now!</button>
-    </center>
-    </div>
+    <div class="container">
+        <h4>Please enter your name and marks</h4>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Tamil</th>
+                <th>English</th>
+                <th>Maths</th>
+                <th>Science</th>
+                <th>Social</th>
+            </tr>
+            <tr>
+                <td><input id="n"></td>
+                <td><input id="t"></td>
+                <td><input id="e"></td>
+                <td><input id="m"></td>
+                <td><input id="s"></td>
+                <td><input id="ss"></td>
+            </tr>
 
-    <script src="web.js"></script>
+        </table>
+            <button onclick="result()">Calculate</button>
+        <hr/>
+        <h4>Your result</h4>
+        <table id="tableResult" class="result">
+            <tr>
+                <th>Name</th>
+                <th>Tamil</th>
+                <th>English</th>
+                <th>Maths</th>
+                <th>Science</th>
+                <th>Social</th>
+                <th>Total</th>
+                <th>Result</th>
+            </tr>
+        </table>
+    </div>
+    </center>
+    <script src="./doc.js">
+    </script>
+    
 </body>
 </html>
